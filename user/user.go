@@ -7,12 +7,12 @@ type User struct {
 	Name string
 }
 
-func (u *User) speak() {
+func (u *User) Speak() {
 	println(u.Name)
 }
 
 func main() {
 	u := new(User)
 	u.Name = "Gopher"
-	u.speak()
+	u.Speak()
 }
