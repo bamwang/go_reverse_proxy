@@ -2,12 +2,11 @@ package main
 
 type MyString string
 
-func (this *MyString) Length() int {
-	sum := 0
+func (this *MyString) Length() (sum int) {
 	for range *this {
 		sum++
 	}
-	return sum
+	return
 }
 
 func main() {
